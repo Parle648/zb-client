@@ -10,7 +10,7 @@ const authRequest = async (data: {
   try {
     stateStore.dispatch(setLoading(true));
     const authToken = await axios.get(
-      `https://zenbittech-project.onrender.com//users?loginData=${JSON.stringify(data)}`,
+      `https://zenbittech-project.onrender.com/users?loginData=${JSON.stringify(data)}`,
     );
 
     if (authToken.data.token) {

@@ -7,7 +7,7 @@ const getDeals = async (token: string) => {
   try {
     stateStore.dispatch(setLoading(true));
     const dealsData = await axios(
-      `https://zenbittech-project.onrender.com//deals?token=${token}`,
+      `https://zenbittech-project.onrender.com/deals?token=${token}`,
     );
 
     stateStore.dispatch(setDeals(dealsData.data));

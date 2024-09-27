@@ -11,7 +11,7 @@ const createUserRequest = async (data: {
   try {
     stateStore.dispatch(setLoading(true));
     const authToken = await axios.post(
-      'https://zenbittech-project.onrender.com//users',
+      'https://zenbittech-project.onrender.com/users',
       {
         ...data,
       },
